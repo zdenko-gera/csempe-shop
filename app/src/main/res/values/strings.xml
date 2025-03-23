@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CsempeShop</string>
+    <string name="registration">Regisztráció</string>
+    <string name="lastname">Vezetéknév</string>
+    <string name="firstname">Utónév</string>
+    <string name="email">E-mail\n</string>
+    <string name="mobil">Mobil</string>
+    <string name="login">Belépés</string>
+    <string name="cancel">Mégse</string>
+    <string name="password">Jelszó</string>
+    <string name="confirmPassword">Jelszó megerősítése</string>
+    <string name="private_customer">Magánszemély</string>
+    <string name="company">Cég</string>
+    <string name="toShop">Termékeink</string>
+    <string name="csempebolt">Csempebolt</string>
+    <string name="products">Termékeink</string>
+    <string name="logout">Kijelentkezés</string>
+    <string-array name="account_type">
+        <item>Magánszemély</item>
+        <item>Cég</item>
+    </string-array>
+
+    <string-array name="shopping_item_titles">
+        <item>Matt rektifikált járólap</item>
+        <item>Üvegmozaik csempe</item>
+        <item>Cersanit Timberfox</item>
+        <item>Zalakerámia Provance</item>
+    </string-array>
+
+    <string-array name="shopping_item_infos">
+        <item>Matt hatású strapabíró járólap</item>
+        <item>Tökéletes választás fürdőszobákba</item>
+        <item>Modern stílusú fa hatású burkolat</item>
+        <item>Klasszikus megjelenésű csempe</item>
+    </string-array>
+
+    <string-array name="shopping_item_prices">
+        <item>8998 Ft</item>
+        <item>8999 Ft</item>
+        <item>4998 Ft</item>
+        <item>7520 Ft</item>
+    </string-array>
+
+    <string-array name="shopping_item_images">
+        <item>@drawable/matte_tiles</item>
+        <item>@drawable/bath_tiles</item>
+        <item>@drawable/wooden_timberfox_cersanit_tiles</item>
+        <item>@drawable/classic_zalakeramia_tiles</item>
+    </string-array>
+</resources>

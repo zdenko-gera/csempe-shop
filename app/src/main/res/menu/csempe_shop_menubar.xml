@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchbar"
+        android:title="Keresés"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/cart"
+        android:title="Kosár"
+        android:icon="@drawable/baseline_add_shopping_cart_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Kijelentkezés"
+        android:icon="@drawable/baseline_block_24"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        />
+</menu>
