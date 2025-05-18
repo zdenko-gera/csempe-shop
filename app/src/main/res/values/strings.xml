@@ -15,6 +15,8 @@
     <string name="csempebolt">Csempebolt</string>
     <string name="products">Termékeink</string>
     <string name="logout">Kijelentkezés</string>
+    <string name="delete">Törlés</string>
+    <string name="toSales">Akciós termékeink</string>
     <string-array name="account_type">
         <item>Magánszemély</item>
         <item>Cég</item>

@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -43,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.registerButton).setVisibility(View.VISIBLE);
             findViewById(R.id.logoutButton).setVisibility(View.GONE);
         }
+
+        Button loginButton = findViewById(R.id.loginButton);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        loginButton.startAnimation(animation);
+
+        Button registerButton = findViewById(R.id.registerButton);
+        animation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        registerButton.startAnimation(animation);
     }
 
     public void register(View view) {
@@ -62,6 +73,15 @@ public class MainActivity extends AppCompatActivity {
     public void toShop(View view) {
         Intent intent = new Intent(this, ShopActivity.class);
         intent.putExtra("SECRET_KEY", SECRET_KEY);
+        intent.putExtra("inSaleListing", false);
+
+        startActivity(intent);
+    }
+
+    public void toSalesShop(View view) {
+        Intent intent = new Intent(this, ShopActivity.class);
+        intent.putExtra("SECRET_KEY", SECRET_KEY);
+        intent.putExtra("inSaleListing", true);
 
         startActivity(intent);
     }

@@ -121,6 +121,7 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
             mPriceTextView.setText(currentItem.getPrice());
 
             Glide.with(mContext).load(currentItem.getImageResource()).into(mImageView);
+            itemView.findViewById(R.id.productDelete).setOnClickListener(view -> ((ShopActivity)mContext).deleteProduct(currentItem));
         }
     };
 }

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,44 +13,32 @@
 
     <TextView
         android:id="@+id/appTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/csempebolt"
-        android:textColor="@color/black"
-        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/toShopButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/csempebolt"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/toShopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/cta_bg"
         android:ems="10"
         android:onClick="toShop"
         android:text="@string/toShop"
-        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/toSalesShopButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:onClick="toSalesShop"
-        android:text="@string/toSales"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/pink"
-        app:layout_constraintTop_toBottomOf="@id/toShopButton" />
+        app:layout_constraintTop_toTopOf="@id/appTitle"
+        android:background="@drawable/cta_bg"
+        android:textColor="@color/white"
+        />
 
     <Button
         android:id="@+id/loginButton"
@@ -60,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="@color/grey"
-        app:layout_constraintTop_toBottomOf="@id/toSalesShopButton" />
+        app:layout_constraintTop_toBottomOf="@id/toShopButton" />
 
     <Button
         android:id="@+id/registerButton"
@@ -93,3 +85,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
