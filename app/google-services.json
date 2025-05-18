@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "355166715210",
+    "project_id": "csempeshop-d1e66",
+    "storage_bucket": "csempeshop-d1e66.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355166715210:android:904d4ad5f6e1f34ac855b3",
+        "android_client_info": {
+          "package_name": "com.example.csempeshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355166715210-ihrlapfv79pvpj0gbakg2f6kf0vb1gil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.csempeshop",
+            "certificate_hash": "15ec75d271c5a4cfeaf2f94a4eeeadb8040b130b"
+          }
+        },
+        {
+          "client_id": "355166715210-0pep9q51eg0fgd41a2qvrfuq7gnivhsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqQBVXC2t2OFmX_0ts46AnBBM8UYp0TVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355166715210-0pep9q51eg0fgd41a2qvrfuq7gnivhsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
